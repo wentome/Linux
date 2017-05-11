@@ -1,0 +1,6 @@
+条件执行
+方法1： if [ ！ -e file ] 
+      then
+        echo "file not exist"
+      fi 
+方法2：推荐使用  书写简介 test -e file && echo "file exist" 如果文件存在 执行     test -e file || echo "file not exist" 文件不存在执行
