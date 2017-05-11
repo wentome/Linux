@@ -1,0 +1,5 @@
+./configure --option1=value1 \      
+    --option2=value2 \
+    --option3=value3 
+    
+    注意事项： 1 第一行必须有一个参数  2 行与行之间不能有空格和注释  3 最后行不能有换行符 4 可以使用相对路径  5可以使用变量 
