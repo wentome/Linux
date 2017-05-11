@@ -1,0 +1,19 @@
+
+useradd 是基础命令 有很多参数                运行权限 root和root组
+root# useradd cp 只是创建了一个cp 用户而已 没有组 也没有关联目录 没有密码 因此不可以用于登录Linux系统 
+可以 加上若干参数 达到adduser命令的效果
+useradd -m -s 然后添加password
+
+常用参数：-d 关联普通目录
+         -g 创建用户组
+         -m 创建用户目录
+         -p 创建密码
+
+adduser 是一段调用了useradd的perl交互型脚本  运行权限 root和root组
+如果执行root# adduser cp 会创建cp 用户   创建/home/cp 用户目录   交互方式添加password  
+cp 用户可以用于登录Linux系统
+
+
+删除用户 
+userdel name  只删除用户
+userdel -r name 删除相关文件
