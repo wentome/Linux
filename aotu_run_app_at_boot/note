@@ -1,0 +1,6 @@
+编写一段脚本 如local_severs.sh
+
+一定要插入BEGIN  END　INFO　
+touch /var/lock/local_servers.sh  为了防止重复启动
+
+最后使用update-rc.d local_servers.sh defaults 命令在Rc0.d rc1.d ....rc6.d 建立不同级别的链接 
